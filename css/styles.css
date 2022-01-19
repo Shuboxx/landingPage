@@ -1,0 +1,212 @@
+:root {
+    --dark-bg: #1f2937;
+    --button: #3882f6;
+    --quote-section-bg: #e5e7eb;
+    --hero-text: #f9faf8;
+    --hero-secondary: #e5e7eb;
+    --header-text: #1f2937;
+    --quote-text: #1f2937;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+    /* Header */
+
+header {
+    height: 450px;
+}
+
+header, footer {
+    background-color: var(--dark-bg);
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    width: 65%;
+    padding: 8px;
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.logo {
+    color: var(--hero-text);
+    font-size: 24px;
+}
+
+.header nav ul {
+    display: flex;
+    gap: 32px;
+}
+
+.header nav ul li {
+    list-style: none;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color: var(--hero-secondary);
+}
+
+.header .hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .hero-section .left-section,
+.header .hero-section .right-section {
+    width: 50%;
+}
+
+.header .hero-section h1 {
+    color: var(--hero-text);
+    font-size: 48px;
+    margin-bottom: 0;
+}
+
+.header .hero-section p {
+    color: var(--hero-secondary);
+}
+
+button {
+    background-color: var(--button);
+    padding: 8px 32px;
+    border-radius: 5px;
+    border: none;
+    color: var(--hero-text);
+}
+
+.header .hero-section .right-section {
+    background-color: grey;
+    padding: 90px 90px 90px 0;
+    text-align: center;
+}
+
+    /* Info section */
+
+.info-section {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-section h2 {
+    /* text-align: center; */
+    margin-top: 32px;
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--header-text);
+}
+
+.card-container {
+    display: flex;
+    gap: 32px;
+    width: 55%;
+}
+
+.square {
+    height: 150px;
+    width: 150px;
+    border: 4px solid var(--button);
+    border-radius: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.card p {
+    text-align: center;
+}
+
+    /* Quote section */
+
+.quote-section {
+    height: 350px;
+    background-color: var(--quote-section-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-container {
+    width: 55%;
+}
+
+.quote-container blockquote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.author-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: -20px;
+}
+
+.author-container span {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+    /* Sign up section */
+
+.sign-up {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up-container {
+    height: 150px;
+    width: 65%;
+    background-color: var(--button);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sign-up-left {
+    color: var(--hero-text);
+}
+
+.sign-up-left h3 {
+    margin-bottom: -15px;
+}
+
+.sign-up button {
+    border: 2px solid white;
+}
+
+    /* Footer */
+
+footer {
+    height: 80px;
+    color: var(--hero-secondary);
+    display: flex;
+    align-items: center;
+}
